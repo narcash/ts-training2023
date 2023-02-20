@@ -1,8 +1,10 @@
 import { faker } from 'faker';
+import { IMappable } from './CustomMap';
 
-export class Company {
+export class Company implements IMappable {
     companyName: string;
     catchPhrase: string;
+    color: 'black'
     location: {
         lat: number;
         lng: number
